@@ -1,5 +1,8 @@
 <?php
 session_start();
+include_once "conf.php";
+$pdo = new PDO("mysql:host=$host;dbname=$db", $user, $pass);
+print_r($pdo->query("SELECT * FROM Bienvenue")->fetchAll());
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -15,7 +18,7 @@ session_start();
 	<h1>
 		<?php echo "Hello World!"; ?>
 	</h1>
-	
+
 	<a href="./page.php">Page</a>
 </body>
 
