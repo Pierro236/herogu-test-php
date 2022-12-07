@@ -1,4 +1,4 @@
-FROM nginx:1.21.6-alpine
+FROM nginx:1.22.6-alpine
 
 LABEL maintainer="theodore.prevot@garageisep.com" \
 	org.label-schema.name="alpine" \
